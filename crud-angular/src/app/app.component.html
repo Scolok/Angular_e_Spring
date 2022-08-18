@@ -1,0 +1,42 @@
+<mat-toolbar color="primary" class="p-grid">
+  <mat-toolbar-row>
+
+    <button mat-fab color="primary">
+      <mat-icon>home</mat-icon>
+    </button>
+
+    <span class="espaco-tollbar"></span>
+
+    <button mat-flat-button color="primary">Modelos Gratis</button>
+    <span class="espaco-tollbar-small"></span>
+    <button mat-flat-button color="primary">Modelos RPG</button>
+    <span class="espaco-tollbar-small"></span>
+    <button mat-flat-button color="primary">Modelos Anime</button>
+    <span class="espaco-tollbar-small"></span>
+    <button mat-flat-button color="primary">Modelos Jogos</button>
+
+
+
+    <span class="example-spacer"></span>
+
+    <button mat-button [matMenuTriggerFor]="menu" class="minhaconta">Minha Conta</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Minhas compras</button>
+      <button mat-menu-item>Meu carrinho</button>
+      <button mat-menu-item>Suporte</button>
+      <button mat-menu-item>Sair</button>
+
+
+    </mat-menu>`
+
+  </mat-toolbar-row>
+
+
+
+
+
+
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>
